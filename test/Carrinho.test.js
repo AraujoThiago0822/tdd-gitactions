@@ -13,9 +13,9 @@ describe('Carrinho de Compras', function() {
     assert.deepStrictEqual(carrinho.listarItens(), [{ nome: 'produto1', preco: 10, quantidade: 2 }]);
   });
 
-  it('deve calcular o total da compra', function() {
-    carrinho.adicionarItem('produto1', 10, 2);
-    carrinho.adicionarItem('produto2', 20, 1);
+  it('deve calcular o total da compra', function0() {
+    carrinho.adicionar0Item('produto1', 10, 2);
+    carrinho.adicionar0Item('produto2', 20, 1);
     assert.strictEqual(carrinho.calcularTotal(), 40);
   });
 
