@@ -4,30 +4,27 @@ module.exports = class Carrinho {
     }
   
     adicionarItem(nome, preco, quantidade) {
-      this.itens.push({ nome, preco, quantidade });
+      //TODO: Verificar se o item já existe no carrinho
     }
   
     removerItem(nome) {
-      this.itens = this.itens.filter(item => item.nome !== nome);
+      //TODO: Verificar se o item existe no carrinho
     }
   
     listarItens() {
-      return this.itens;
+      //TODO: Retornar a lista de itens no carrinho
     }
   
     limparCarrinho() {
-      this.itens = [];
+      //TODO: Limpar todos os itens do carrinho
     }
   
     atualizarQuantidade(nome, novaQuantidade) {
-      const item = this.itens.find(item => item.nome === nome);
-      if (item) {
-        item.quantidade = novaQuantidade;
-      }
+      //TODO: Atualizar a quantidade de um item no carrinho
     }
   
     calcularTotal() {
-      return this.itens.reduce((total, item) => total + (item.preco * item.quantidade), 0);
+      //TODO: Calcular o total do carrinho
     }
   };
   
