@@ -27,4 +27,3 @@ module.exports = class Carrinho {
       //TODO: Calcular o total do carrinho
     }
   };
-  
